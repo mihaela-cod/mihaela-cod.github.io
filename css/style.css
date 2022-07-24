@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+
+* {
+  font-family: Roboto;
+}
+
+/*box-sizing - Definește modul în care se calculează lățimea și înălțimea unui element: dacă acestea includ umplutură și borduri sau nu*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+input,
+textarea {
+  font-size: 14px;
+
+  color: #f1f1f1;
+}
+
+body {
+  background-color: #bbb;
+}
+
+/* început header */
+
+.h1-header {
+  font-size: 33px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+#motto {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fad347;
+  font-style: italic;
+}
+
+.h3-header {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #f1f1f1;
+  font-style: italic;
+}
+
+/* început meniu */
+
+div.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 40px 0px 30px;
+  background-color: #072f4c;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navbar a {
+  color: #f1f1f1;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #fad347;
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-logo {
+  font-size: 20px;
+}
+
+/* sfârşit meniu */
+
+.header-container {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #072f4c;
+  border-radius: 0.25rem;
+}
+
+.box1 {
+  flex-basis: 30%;
+  background-color: #094978;
+}
+
+.box2 {
+  padding: 40px 40px 40px 40px;
+  flex-basis: 70%;
+  background-color: #094978;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: solid 1px #f1f1f1;
+  color: #f1f1f1;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.btn:hover {
+  background-color: #f1f1f1;
+  color: black;
+  text-decoration: none;
+}
+
+/* sfârşit header */
+
+/* Column container */
+#content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main column */
+#main {
+  flex: 80%;
+  background-color: #f1f1f1;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.page {
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px 40px 0px 40px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  border: 1px solid #f1f1f1;
+}
+
+/* skills */
+
+.progress-bar {
+  display: flex;
+  background-color: #094978;
+  transition: width 0.6s ease;
+}
+
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+/* Projects */
+
+div.container {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+div.projects {
+  flex-basis: 30%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.projects:nth-child(1) {
+  background-color: #ffff;
+}
+.projects:nth-child(2) {
+  background-color: #094978;
+}
+.projects:nth-child(3) {
+  background-color: #072f4c;
+}
+
+.transparenta {
+  opacity: 0.6;
+}
+
+/* Languages
+ex tabel w3schools */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th {
+  background-color: #094978;
+  color: #ddd;
+  text-align: center;
+}
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Footer */
+
+footer a {
+  color: #f5f5f5;
+}
+
+a {
+  color: #094978;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.text-white {
+  color: #f1f1f1;
+  font-size: 16px;
+  line-height: 0.7;
+  font-weight: 400;
+}
+
+.text-yellow {
+  color: #fad347;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.text-yellow-400 {
+  color: #fad347;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#copyright-text {
+  color: #f1f1f1;
+  font-size: 15px;
+}
+
+.footer-container {
+  background-color: #072f4c;
+}
+
+.footer-box {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-box:nth-child(1) {
+  background-color: #072f4c;
+  flex-basis: 35%;
+}
+.footer-box:nth-child(2) {
+  background-color: #072f4c;
+  flex-basis: 30%;
+}
+.footer-box:nth-child(3) {
+  background-color: #072f4c;
+  flex-basis: 35%;
+}
+
+/* formular contact*/
+
+.form-container {
+  background-color: #072f4c;
+}
+
+.form-row {
+  padding: 5px 0;
+  display: flex;
+}
+
+.form-row label {
+  padding-right: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  background-color: #094978;
+  border: none;
+  height: 33px;
+}
+
+.form-row textarea {
+  flex: 1;
+  background-color: #094978;
+  border: none;
+  height: 50px;
+}
+
+.form-row button {
+  flex: 1;
+  padding: 12px 30px;
+  background-color: #fad347;
+  border: solid 1px #094978;
+  color: #000;
+}
+
+.form-row button:hover {
+  background-color: #094978;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.hr-footer {
+  width: 20%;
+  border: 1px solid #fad347;
+  text-align: left;
+  margin-left: 0;
+}
+
+/*sfârşit footer*/
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 700px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
