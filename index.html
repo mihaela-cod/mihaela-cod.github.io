@@ -1,29 +1,14 @@
 <!DOCTYPE html>
-<!-- Instructiune care ofera informatii despre versiunea HTML.
-Sintaxa pentru HTML 5 -->
 <html>
   <head>
-    <!-- Titlul documentului este vizibil in bara de titlu a browserului -->
     <title>MC - Proiect 1</title>
-    <!-- afisarea diacriticelor care sunt codate in UTF8 -->
     <meta charset="UTF-8" />
-    <!-- Acest lucru oferă browser-ului instrucțiuni cu privire la modul de a controla dimensiunile paginii și scalare.-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- am adăugat un favicon / browserul o afişează lângă numele site-ului -->
     <link rel="icon" href="img/logo-favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <!-- O foaie de stil externă poate fi legată de un document HTML prin intermediul elementului LINK -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!-- început header -->
-    <!-- început meniu -->
     <header>
       <div class="navbar">
         <a href="#" onclick="showPage('home')" class="navbar-logo">
@@ -31,39 +16,31 @@ Sintaxa pentru HTML 5 -->
             >MC</strong
           >
         </a>
-        <a href="#" onclick="showPage('home')">HOME</a>
-        <a href="#" onclick="showPage('skills')">SKILLS</a>
-        <a href="#" onclick="showPage('projects')">PROJECTS</a>
-        <a href="#" onclick="showPage('languages')">LANGUAGES</a>
+        <a href="#" id="menu-home" onclick="showPage('home')">HOME</a>
+        <a href="#" id="menu-skills" onclick="showPage('skills')">SKILLS</a>
+        <a href="#" id="menu-projects" onclick="showPage('projects')">PROJECTS</a>
+        <a href="#" id="menu-languages" onclick="showPage('languages')">LANGUAGES</a>
       </div>
-      <!-- sfârşit meniu -->
 
       <div class="header-container">
-        <div class="box1">
-          <img
-            src="img/georgie-cobbs-muOHbrFGEQY-unsplash.jpg"
-            alt="img georgie cobbs"
-          />
+      <div class="hero-img-box">
+          <picture>
+            <img
+              src="img/georgie-cobbs-muOHbrFGEQY-unsplash.jpg"
+              class="hero-img"
+              alt="img georgie cobbs"
+            />
+          </picture>
         </div>
 
         <div class="box2">
           <h1 class="h1-header">Mihaela CODRESCU</h1>
-          <h2 id="motto"><span>Web development student </span></h2>
-          <h3 class="h3-header"><br /><strong>PROIECT 1 - CV</strong></h3>
-
-          <h3 class="h3-header">
-            "Învăţătura din constrângere nu e făcută să rămână, dar cea care
-            pătrunde în suflet prin dragoste şi bunăvoinţă, aceea rămâne acolo
-            pentru totdeauna."<br />
-            Sfântul Ioan Gură de Aur
-          </h3>
+          <h2 id="motto"><span>Web developer - Cursant</span></h2>
+          </h2>
           <a href="#" onclick="showPage('projects')" class="btn">Vezi proiectele mele</a>
         </div>
       </div>
     </header>
-    <!-- sfârşit header -->
-
-    <!-- început main -->
 
     <section id="content">
       <div id="main">
@@ -87,10 +64,12 @@ Sintaxa pentru HTML 5 -->
             urna. Ut mollis rutrum condimentum. Proin ultrices placerat turpis,
             et hendrerit eros pretium sit amet.
           </p>
-         
-          <br />
 
-          <br />
+         <p> Pellentesque maximus ut massa at gravida. Suspendisse pellentesque sapien sit amet mauris ultricies, quis porta sapien vulputate. Sed eget odio purus. Sed fringilla dui lectus, a vehicula justo consequat aliquet. Etiam nec efficitur tortor, a tincidunt eros. Fusce sem libero, luctus lacinia lacus id, consequat ultrices nisl. Aenean posuere lorem a sapien efficitur sodales. Duis eu odio lorem. Cras sodales dapibus felis id bibendum. Maecenas et libero magna.</p>
+
+         <p> Pellentesque mattis leo et est elementum vestibulum. Phasellus convallis fermentum neque. Maecenas placerat at justo sed iaculis. Morbi mollis maximus nibh, ac molestie sapien. Mauris ac maximus lacus. Nam suscipit eleifend justo, vel ultricies velit placerat sit amet. Sed ac commodo libero. Pellentesque tempus ultrices mollis. Aliquam et ullamcorper magna. Morbi lectus nibh, volutpat sit amet mauris eget, placerat consectetur orci. Nam eros libero, auctor ut elementum id, posuere sit amet eros.
+         </p>        
+                  
         </div>
         <div id="skills" class="page">
           <h2>Skills</h2>
@@ -146,22 +125,23 @@ Sintaxa pentru HTML 5 -->
            <br />
           
               <p><strong>PROIECT 1</strong> - CV</p>
+              <br />
+            </div>
+            
+          <div class="projects">       
+              <p ><strong>PROIECT 2</strong> - individual</p>
+              <br />
             </div>
         
           <div class="projects">
-            <img src="img/proiect2.png" alt="Proiect 2" style="width: 100%" class="transparenta"/>
-            
-              <p class="text-white"><strong>PROIECT 2</strong> - individual</p>
-            </div>
-
-          <div class="projects">
-            <img src="img/proiect3.png" alt="Proiect 3" style="width: 100%" class="transparenta"/>
            
-            <p class="text-white"><strong>PROIECT 3</strong> - în echipă</p>
+            <p ><strong>PROIECT 3</strong> - în echipă</p>
+            <br />
             </div>
          
           </div>
-          <br />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio ipsum, tempus ac quam non, facilisis viverra felis. Nullam lacus augue, porttitor at arcu ac, mollis laoreet nulla. Aliquam sollicitudin ex ac ipsum dapibus commodo. Nam facilisis, tortor convallis pellentesque finibus, orci elit faucibus est, eget dapibus justo velit at dui. Praesent malesuada sem vel metus eleifend ornare. Maecenas scelerisque sed ante ut fermentum. Sed sagittis et sapien ac molestie. Ut suscipit pharetra dui, in venenatis nunc condimentum in. Cras lacinia sodales magna sit amet dictum. Etiam commodo ipsum nec erat efficitur finibus.</p>
+         
         </div>
 
         <div id="languages" class="page">
@@ -188,14 +168,12 @@ Sintaxa pentru HTML 5 -->
               </tr>
             </table>
           </div>
-          <br />
-          <br />
-          <br />
+          
         </div>
       </div>
     </section>
 	
-    <!-- început footer -->
+
     <footer>
       <div class="footer-container">
         <div class="footer-box">
@@ -215,12 +193,13 @@ Sintaxa pentru HTML 5 -->
 
           <br />
           <br />
-          <h2 class="text-yellow">Web Developer Student @ FastTrackIT</h2>
+          <h2 class="text-yellow">Web Developer - Cursant @ FastTrackIT</h2>
           <h2 class="text-yellow-400">PROIECT 1 - CV</h2>
           <br />
+          
           <br />
 
-        <p id="copyright-text">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Mihaela Codrescu</p>
+        <p id="copyright-text">Copyright &copy; <script>document.write(new Date().getFullYear());</script> -  Mihaela Codrescu</p>
           
         </div>
 
@@ -288,11 +267,7 @@ Sintaxa pentru HTML 5 -->
           </div>
         </div>
       </div>
-
-    
     </footer>
-
-    <!-- sfârşit footer -->
 
     <script src="js/functions.js"></script>
   </body>

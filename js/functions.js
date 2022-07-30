@@ -1,7 +1,6 @@
 var jobTitle = "<span>FastTruckIT</span>";
 var mottoElement = document.getElementById("motto");
 
-//mottoElement.innerHTML = mottoElement.innerHTML + " & " + jobTitle;
 mottoElement.innerHTML += " & " + jobTitle;
 
 function hide(id) {
@@ -19,9 +18,15 @@ function hideAllPages() {
   hide("languages");
 }
 
+var activePage = "home";
+
 function showPage(id) {
   hideAllPages();
   show(id);
+  document.getElementById("menu-" + activePage).classList.remove("active");
+  document.getElementById("menu-" + id).classList.add("active");
+  activePage = id;
 }
 
-showPage("home");
+showPage(activePage);
+

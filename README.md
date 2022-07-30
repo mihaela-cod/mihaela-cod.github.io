@@ -1,4 +1,4 @@
 # mihaela-cod.github.io
-My personal CV
+Proiect 1 - CV
 
 [mihaela-cod.github.io](https://mihaela-cod.github.io)
