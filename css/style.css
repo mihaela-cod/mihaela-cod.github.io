@@ -41,15 +41,15 @@ body {
   color: #f1f1f1;
 }
 
-#motto {
-  font-size: 20px;
+.motto-txt {
+  font-size: 17px;
   font-weight: 300;
   color: #fad347;
   font-style: italic;
 }
 
 .h3-header {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 25px;
   color: #f1f1f1;
@@ -123,7 +123,7 @@ img {
   padding: 12px 30px;
   border: solid 1px #f1f1f1;
   color: #f1f1f1;
-  border-radius: 20px;
+  border-radius: 9px;
   margin-top: 30px;
 }
 .btn:hover {

@@ -1,7 +1,10 @@
 var jobTitle = "<span>FastTruckIT</span>";
-var mottoElement = document.getElementById("motto");
+var mottoElements = document.getElementsByClassName("motto-txt");
 
-mottoElement.innerHTML += " & " + jobTitle;
+for (let index = 0; index < mottoElements.length; index++) {
+  var element = mottoElements[index];
+  element.innerHTML += " @ " + jobTitle;
+}
 
 function hide(id) {
   document.getElementById(id).style.display = "none";
@@ -29,4 +32,3 @@ function showPage(id) {
 }
 
 showPage(activePage);
-
